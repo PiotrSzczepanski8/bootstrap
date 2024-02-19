@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://tiny.pl/dqw5p" type="image/x-icon">
+  <title>Clickstore - sklep internetowy</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    img{
+      max-height:17.5rem;
+      object-fit: cover;
+    }
+    a{
+      font-family:cursive;
+    }
+  </style>
+</head>
+  <body class="overflow-x-hidden overflow-y-scroll">
+      <main class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-success fw-bold sticky-top border-bottom border-dark border-5">
+            <div class="container-fluid ps-5">
+              <ul class="navbar-nav row w-100">
+                <li class="nav-item col-3 ms-5">
+                  <a class="navbar-brand" href="index.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-top: 0.6rem; letter-spacing: 0.1rem;"> clickstore</i></a>
+                </li>
+                <li class="d-flex col-4 me-5">
+                  <input class="form-control me-2" type="search" placeholder="Czego szukasz?" aria-label="Search"/>
+                  <button class="btn btn-outline-dark bg-dark text-light" type="submit">
+                    Szukaj
+                  </button>
+                </li>
+                <li class="nav-item col-1 ms-5">
+                  <a class="nav-link text-light text-uppercase" href="basket.html">koszyk</a>
+                </li>
+                <li class="nav-item col-1">
+                  <a class="nav-link text-light text-uppercase" href="#">przeglądaj</a>
+                </li>
+                <li class="nav-item col-1 ms-5">
+                  <a class="nav-link text-light text-uppercase" href="account.html"><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="row mt-3 ms-1">
+            <div class="col-2">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="btn btn-outline-success text-uppercase fw-bold m-1 active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Dom i ogród</a>
+                <a class="btn btn-outline-success text-uppercase fw-bold m-1" id="list-electronics-list" data-bs-toggle="list" href="#list-electronics" role="tab" aria-controls="list-electronics">Elektronika</a>
+                <a class="btn btn-outline-success text-uppercase fw-bold m-1" id="list-culture-list" data-bs-toggle="list" href="#list-culture" role="tab" aria-controls="list-culture">Kultura i rozrywka</a>
+                <a class="btn btn-outline-success text-uppercase fw-bold m-1" id="list-sport-list" data-bs-toggle="list" href="#list-sport" role="tab" aria-controls="list-sport">Sport i turystyka</a>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <div class="mt-3 ms-3 mb-1 w-100 flex-wrap d-flex f-wrap gap-4">
+                    <div class="card border-4 border-dark w-25" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1542728928-1413d1894ed1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top rounded-0" alt=""/>
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">196,00 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Lampka biurkowa</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                    </div>
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1611288870280-4a322b8ec7ec?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid rounded-0"alt="" />
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">13,97 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Klucz nastawny</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                    </div>
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem;">
+                      <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top rounded-0" alt=""/>
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">158,00 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Krzesło barowe</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                <div class="tab-pane fade" id="list-electronics" role="tabpanel" aria-labelledby="list-electronics-list">
+                  <div class="mt-3 ms-3 mb-1 w-100 flex-wrap d-flex f-wrap gap-4">
+                  <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                    <img src="https://images.unsplash.com/photo-1592839719941-8e2651039d01?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " class="card-img-top img-fluid rounded-0"alt="" />
+                    <div class="card-body">
+                      <h3 class="card-title mb-0 text-success text-end">249,00 zł</h3>
+                      <h5 class="card-title mb-3 text-start">Kontroler SONY DualShock 4 V2 Czerwony</h5>
+                      <a href="#" class="btn btn-success">sprawdź</a>
+                    </div>
+                  </div>
+                  <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1609252924198-30b8cb324d2b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top rounded-0" alt=""/>
+                    <div class="card-body">
+                      <h3 class="card-title mb-0 text-success text-end">669,00 zł</h3>
+                      <h5 class="card-title mb-3 text-start">Samsung Galaxy A51</h5>
+                      <a href="#" class="btn btn-success">sprawdź</a>
+                    </div>
+                  </div>
+                  <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                    <img src="https://images.unsplash.com/photo-1628773193539-ad29c647c071?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top rounded-0" alt=""/>
+                    <div class="card-body">
+                      <h3 class="card-title mb-0 text-success text-end">1129,00 zł</h3>
+                      <h5 class="card-title mb-3 text-start">Apple Airpods Pro 2</h5>
+                      <a href="#" class="btn btn-success">sprawdź</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="tab-pane fade" id="list-culture" role="tabpanel" aria-labelledby="list-culture-list">
+                  <div class="mt-3 ms-3 mb-1 w-100 flex-wrap d-flex f-wrap gap-4">
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid rounded-0"alt="" />
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">68,69 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Opowieści z Narnii</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                    </div>
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1573141335932-9b22c45aa2df?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid rounded-0"alt="" />
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">47,97 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Szachy</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                  </div>
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1626962131658-603aae425e19?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid rounded-0"alt="" />
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">3780,99 zł</h3>
+                        <h5 class="card-title mb-3 text-start">ASBA złote bębny luxe edition 2</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                  </div>
+                  
+                </div>
+                </div>
+              </div>
+                <div class="tab-pane fade" id="list-sport" role="tabpanel" aria-labelledby="list-sport-list">
+                  <div class="mt-3 ms-3 mb-1 w-100 flex-wrap d-flex f-wrap gap-4">
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid rounded-0"alt="" />
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">89,99 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Piłka Uhlsport</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                    </div>
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid rounded-0"alt="" />
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">15 683,91 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Rower CNCPT CANNONDALE TRACK</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                  </div>
+                    <div class="card border-4 border-dark w-25 m-vh-50" style="min-width: 18rem">
+                      <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid rounded-0"alt="" />
+                      <div class="card-body">
+                        <h3 class="card-title mb-0 text-success text-end">75,80 zł</h3>
+                        <h5 class="card-title mb-3 text-start">Plecak</h5>
+                        <a href="#" class="btn btn-success">sprawdź</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      <footer class="text-center text-white mt-5" style="background-color: #198456;">
+        <div class="container p-4 pb-0">
+          <section class="">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              Zerejestruj się&nbsp; 
+              <a href="account.html" class="text-white">tutaj</a>
+            </div>
+          </section>
+        </div>
+    
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          &copy; 2024 Piotr Szczepański 2P
+        </div>
+      </footer>
+  </body>
+</html>
